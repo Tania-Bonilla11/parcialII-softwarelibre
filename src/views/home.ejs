@@ -1,0 +1,25 @@
+<div class="py-5 container">
+    <ul class="row">
+        <li class='list-group-item list-group-item-light'>
+            <h5 class='display-4 d-flex justify-content-center font-weight-bold'>Integrantes :</h5>
+
+
+        </li>
+        <%users && users.forEach(user=> {%>
+
+            <div class="card col-md" style="width: 18rem;">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2VaZbSHXBZ8UfnW0nh-nIkMD7TlTL9Cz6TQRYNOkDF5uh_T98ic9CYTgLvWpxjdPkUJI&usqp=CAU" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h6 class="text-warning">
+                        <%=user.nombre %>
+                    </h6>
+                    <h6 class="text-dark">
+                        <%=user.codigo%>
+                    </h6>
+                </div>
+              </div>
+
+
+            <%}); %>
+    </ul>
+</div>
